@@ -1,0 +1,40 @@
+<ion-header [translucent]="true" no-border>
+  <ion-toolbar color="success" class="title">
+    <ion-back-button slot="start" defaultHref="/inicio"></ion-back-button>
+    <ion-title>Lista de trabajos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Lista de trabajos mostrada en forma de tabla -->
+  <div>
+    <h2 class="primary">Partes de trabajos de Moneleg S.L.</h2>
+  </div>
+
+<!-- Obtenmos todas las coordenadas de la API de Google Maps -->
+
+<div class="trabajos" align="center">
+    <!-- Utilizamos el sistema de grids para crear una buena tabla -->
+    <ion-grid>
+        <ion-row>
+            <ion-col class="cabecera">Nombre de Trabajo</ion-col>
+            <ion-col class="cabecera">Especificación</ion-col>
+            <ion-col class="cabecera">Estado</ion-col>
+            <ion-col class="cabecera">Botón</ion-col>
+        </ion-row>
+
+        <!-- *ngFor="let trabajo of trabajos" -->
+        <ion-row>
+            <ion-col class="datos"></ion-col>
+            <ion-col class="datos"></ion-col>
+            <ion-col class="datos"></ion-col>
+            <ion-col class="datos">
+              <ion-button (click)="realizarTrabajo()" color="success">
+                <ion-icon name="checkmark-circle"></ion-icon>
+                <ion-text>Realizar</ion-text>
+              </ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</div>
+</ion-content>

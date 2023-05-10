@@ -1,0 +1,7 @@
+{
+  "name": "elegatrabajos",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,50 @@
+<ion-header [translucent]="true" no-border>
+  <ion-toolbar color="success" class="title">
+    <ion-back-button slot="start" defaultHref="/inicio"></ion-back-button>
+    <ion-title>Control de presencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Parte de la aplicación del control de presencia -->
+
+  <ion-card>
+    <img alt="Elega Energia" src="assets/images/paisaje_elega.PNG" />
+    <ion-card-header color="primary">
+      <ion-card-title class="card_title">Presencia actual de trabajadores</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-text color="dark">Para cada trabajador de Moneleg S.L.</ion-text>
+    </ion-card-content>
+  </ion-card>
+
+  <!--<ion-list #controlpresencia>
+    <ion-card class="card">
+      <ion-item color="warning">
+        <ion-label color="light" align="center">No se han encontrado trabajadores en la oficina</ion-label>
+      </ion-item>
+    </ion-card>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-grid [fixed]="true">
+          <ion-row>
+            <ion-label text-left>
+              <h3 slot="start"><strong>NIF/DNI:</strong></h3>
+              <h3 slot="start"><strong>Nombre:</strong></h3>
+              <h3 slot="start"><strong>Apellidos:</strong></h3>
+            </ion-label>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      Situamos el item a la derecha 
+      <ion-item-options side="end">
+         <ion-item-option color="danger">
+            <ion-icon slot="icon-only" name="power-outline"></ion-icon>
+            Ver estado
+          </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>-->
+</ion-content>

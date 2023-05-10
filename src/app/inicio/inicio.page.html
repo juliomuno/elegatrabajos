@@ -1,0 +1,19 @@
+<ion-header [translucent]="true" no-border>
+  <ion-toolbar color="success" class="title">
+    <ion-title>Trabajos de Elega</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Botones de enlace del menú de la aplicación -->
+
+  <ion-button (click)="mostrarControlPresencia()" color="tertiary">
+    <ion-icon name="people-circle-outline"></ion-icon>
+    <ion-text>Control de presencia</ion-text>
+  </ion-button>
+
+  <ion-button (click)="mostrarTrabajos()" color="tertiary">
+    <ion-icon name="list-circle"></ion-icon>
+    <ion-text>Lista de trabajos</ion-text>
+  </ion-button>
+</ion-content>
